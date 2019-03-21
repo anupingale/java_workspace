@@ -169,6 +169,13 @@
       </item>
     </group>
   </component>
+  <component name="ProjectDictionaryState">
+    <dictionary name="pannapur">
+      <words>
+        <w>feets</w>
+      </words>
+    </dictionary>
+  </component>
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/java_workspace.iml" filepath="$PROJECT_DIR$/java_workspace.iml" />

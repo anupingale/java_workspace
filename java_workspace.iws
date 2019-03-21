@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0d5ba48-7e6a-4d4b-a026-0047582eff5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/step/bootCamp/Dimension.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/step/bootCamp/NegativeDimensionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/step/bootCamp/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/step/bootCamp/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/step/bootCamp/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/step/bootCamp/DimensionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/step/bootCamp/RectangleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/step/bootCamp/SquareTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_workspace.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/java_workspace.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_workspace.iws" beforeDir="false" afterPath="$PROJECT_DIR$/java_workspace.iws" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -63,14 +56,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/step/bootCamp/NegativeDimensionException.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/step/Measurements/QuantityTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="1276">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
               <folding>
-                <element signature="e#204#205#0" expanded="true" />
-                <element signature="e#227#228#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/step/Measurements/Quantity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <folding>
+                <element signature="e#340#341#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/step/Measurements/Unit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+              <folding>
+                <element signature="e#163#164#0" expanded="true" />
+                <element signature="e#213#214#0" expanded="true" />
+                <element signature="e#521#522#0" expanded="true" />
+                <element signature="e#574#575#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,6 +126,18 @@
         <option value="$PROJECT_DIR$/test/com/step/bootCamp/RectangleTest.java" />
         <option value="$PROJECT_DIR$/test/com/step/bootCamp/DimensionTest.java" />
         <option value="$PROJECT_DIR$/src/com/step/bootCamp/NegativeDimensionException.java" />
+        <option value="$PROJECT_DIR$/src/com/step/tic_tac_toe/Enum.java" />
+        <option value="$PROJECT_DIR$/src/com/step/tic_tac_toe/Player.java" />
+        <option value="$PROJECT_DIR$/src/com/step/tic_tac_toe/Players.java" />
+        <option value="$PROJECT_DIR$/test/com/step/tic_tac_toe/TicTacToeTest.java" />
+        <option value="$PROJECT_DIR$/src/com/step/tic_tac_toe/TicTacToe.java" />
+        <option value="$PROJECT_DIR$/src/com/step/Measurements/Feet.java" />
+        <option value="$PROJECT_DIR$/src/com/step/Measurements/Measurement.java" />
+        <option value="$PROJECT_DIR$/src/com/step/Measurements/Inches.java" />
+        <option value="$PROJECT_DIR$/test/com/step/Measurements/FeetTest.java" />
+        <option value="$PROJECT_DIR$/src/com/step/Measurements/Quantity.java" />
+        <option value="$PROJECT_DIR$/src/com/step/Measurements/Unit.java" />
+        <option value="$PROJECT_DIR$/test/com/step/Measurements/QuantityTest.java" />
       </list>
     </option>
   </component>
@@ -115,8 +146,9 @@
     <option name="LAST_EDITED_TAB_NAME" />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -150,12 +182,39 @@
               <item name="java_workspace" type="b2602c69:ProjectViewProjectNode" />
               <item name="java_workspace" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bootCamp" type="462c0819:PsiDirectoryNode" />
+              <item name="step" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_workspace" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="step" type="462c0819:PsiDirectoryNode" />
+              <item name="Measurements" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_workspace" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="step" type="462c0819:PsiDirectoryNode" />
+              <item name="tic_tac_toe" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java_workspace" type="b2602c69:ProjectViewProjectNode" />
               <item name="java_workspace" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_workspace" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="step" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_workspace" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="step" type="462c0819:PsiDirectoryNode" />
+              <item name="Measurements" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java_workspace" type="b2602c69:ProjectViewProjectNode" />
@@ -174,14 +233,19 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552905429265" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553159398039" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/com/step" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.step.Measurements" />
+      <recent name="com.step.tic_tac_toe" />
       <recent name="com.step.bootCamp" />
       <recent name="com.step" />
     </key>
@@ -189,6 +253,8 @@
       <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.step.Measurements" />
+      <recent name="com.step.tic_tac_toe" />
       <recent name="com.step" />
     </key>
   </component>
@@ -204,7 +270,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DimensionTest">
+  <component name="RunManager" selected="JUnit.QuantityTest">
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -223,16 +289,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DimensionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuantityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java_workspace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.step.bootCamp.*" />
+          <option name="PATTERN" value="com.step.Measurements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.step.bootCamp" />
-      <option name="MAIN_CLASS_NAME" value="com.step.bootCamp.DimensionTest" />
+      <option name="PACKAGE_NAME" value="com.step.Measurements" />
+      <option name="MAIN_CLASS_NAME" value="com.step.Measurements.QuantityTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -244,17 +310,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DimensionTest.NegativeDimensionValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuantityTest.isCentimeterEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java_workspace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.step.bootCamp.*" />
+          <option name="PATTERN" value="com.step.Measurements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.step.bootCamp" />
-      <option name="MAIN_CLASS_NAME" value="com.step.bootCamp.DimensionTest" />
-      <option name="METHOD_NAME" value="NegativeDimensionValue" />
+      <option name="PACKAGE_NAME" value="com.step.Measurements" />
+      <option name="MAIN_CLASS_NAME" value="com.step.Measurements.QuantityTest" />
+      <option name="METHOD_NAME" value="isCentimeterEqual" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -266,17 +332,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RectangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuantityTest.isFeetEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java_workspace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.step.bootCamp.*" />
+          <option name="PATTERN" value="com.step.Measurements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.step.bootCamp" />
-      <option name="MAIN_CLASS_NAME" value="com.step.bootCamp.RectangleTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.step.Measurements" />
+      <option name="MAIN_CLASS_NAME" value="com.step.Measurements.QuantityTest" />
+      <option name="METHOD_NAME" value="isFeetEquals" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -287,17 +354,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SquareTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuantityTest.isInchesEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java_workspace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.step.bootCamp.*" />
+          <option name="PATTERN" value="com.step.Measurements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.step.bootCamp" />
-      <option name="MAIN_CLASS_NAME" value="com.step.bootCamp.SquareTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.step.Measurements" />
+      <option name="MAIN_CLASS_NAME" value="com.step.Measurements.QuantityTest" />
+      <option name="METHOD_NAME" value="isInchesEquals" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -308,17 +376,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SquareTest.perimeterOfSquareWithInvalidParameters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuantityTest.isMillimeterEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java_workspace" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.step.bootCamp.*" />
+          <option name="PATTERN" value="com.step.Measurements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.step.bootCamp" />
-      <option name="MAIN_CLASS_NAME" value="com.step.bootCamp.SquareTest" />
-      <option name="METHOD_NAME" value="perimeterOfSquareWithInvalidParameters" />
+      <option name="PACKAGE_NAME" value="com.step.Measurements" />
+      <option name="MAIN_CLASS_NAME" value="com.step.Measurements.QuantityTest" />
+      <option name="METHOD_NAME" value="isMillimeterEqual" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -355,11 +423,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DimensionTest" />
-        <item itemvalue="JUnit.SquareTest" />
-        <item itemvalue="JUnit.DimensionTest.NegativeDimensionValue" />
-        <item itemvalue="JUnit.RectangleTest" />
-        <item itemvalue="JUnit.SquareTest.perimeterOfSquareWithInvalidParameters" />
+        <item itemvalue="JUnit.QuantityTest" />
+        <item itemvalue="JUnit.QuantityTest.isMillimeterEqual" />
+        <item itemvalue="JUnit.QuantityTest.isCentimeterEqual" />
+        <item itemvalue="JUnit.QuantityTest.isFeetEquals" />
+        <item itemvalue="JUnit.QuantityTest.isInchesEquals" />
       </list>
     </recent_temporary>
   </component>
@@ -377,42 +445,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DimensionTest_NegativeDimensionValue - 2019.03.18 at 15h 16m 49s.xml">
-      <configuration name="DimensionTest.NegativeDimensionValue" configurationId="JUnit" />
+    <history-entry file="QuantityTest_isCentimeterEqual - 2019.03.21 at 14h 13m 58s.xml">
+      <configuration name="QuantityTest.isCentimeterEqual" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DimensionTest_NegativeDimensionValue - 2019.03.18 at 15h 19m 47s.xml">
-      <configuration name="DimensionTest.NegativeDimensionValue" configurationId="JUnit" />
+    <history-entry file="QuantityTest - 2019.03.21 at 14h 14m 12s.xml">
+      <configuration name="QuantityTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SquareTest_perimeterOfSquareWithInvalidParameters - 2019.03.18 at 15h 21m 25s.xml">
-      <configuration name="SquareTest.perimeterOfSquareWithInvalidParameters" configurationId="JUnit" />
+    <history-entry file="QuantityTest - 2019.03.21 at 14h 14m 24s.xml">
+      <configuration name="QuantityTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DimensionTest_NegativeDimensionValue - 2019.03.18 at 15h 23m 08s.xml">
-      <configuration name="DimensionTest.NegativeDimensionValue" configurationId="JUnit" />
+    <history-entry file="QuantityTest - 2019.03.21 at 14h 16m 04s.xml">
+      <configuration name="QuantityTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DimensionTest_NegativeDimensionValue - 2019.03.18 at 15h 23m 48s.xml">
-      <configuration name="DimensionTest.NegativeDimensionValue" configurationId="JUnit" />
+    <history-entry file="QuantityTest_isMillimeterEqual - 2019.03.21 at 14h 27m 46s.xml">
+      <configuration name="QuantityTest.isMillimeterEqual" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DimensionTest - 2019.03.18 at 15h 24m 01s.xml">
-      <configuration name="DimensionTest" configurationId="JUnit" />
+    <history-entry file="QuantityTest - 2019.03.21 at 14h 28m 03s.xml">
+      <configuration name="QuantityTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RectangleTest - 2019.03.18 at 15h 24m 29s.xml">
-      <configuration name="RectangleTest" configurationId="JUnit" />
+    <history-entry file="QuantityTest - 2019.03.21 at 14h 28m 19s.xml">
+      <configuration name="QuantityTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DimensionTest_NegativeDimensionValue - 2019.03.18 at 16h 04m 47s.xml">
-      <configuration name="DimensionTest.NegativeDimensionValue" configurationId="JUnit" />
+    <history-entry file="QuantityTest_isCentimeterEqual - 2019.03.21 at 14h 30m 30s.xml">
+      <configuration name="QuantityTest.isCentimeterEqual" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SquareTest - 2019.03.18 at 16h 05m 13s.xml">
-      <configuration name="SquareTest" configurationId="JUnit" />
+    <history-entry file="QuantityTest_isMillimeterEqual - 2019.03.21 at 14h 33m 08s.xml">
+      <configuration name="QuantityTest.isMillimeterEqual" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DimensionTest - 2019.03.18 at 16h 05m 28s.xml">
-      <configuration name="DimensionTest" configurationId="JUnit" />
+    <history-entry file="QuantityTest - 2019.03.21 at 14h 33m 15s.xml">
+      <configuration name="QuantityTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19384836" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -421,7 +489,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32920355" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.6096386" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30240965" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -429,7 +497,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32920355" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24964234" />
@@ -469,13 +537,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/step/bootCamp/Shape.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -545,14 +606,218 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/step/bootCamp/NegativeDimensionException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="88">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
           <folding>
-            <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#227#228#0" expanded="true" />
+            <element signature="e#181#182#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/step/tic_tac_toe/Enum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/step/tic_tac_toe/Players.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/step/bootCamp/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/step/tic_tac_toe/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/step/tic_tac_toe/TicTacToe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding>
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#228#229#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/step/tic_tac_toe/TicTacToeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/step/Measurements/Feet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#124#125#0" expanded="true" />
+            <element signature="e#174#175#0" expanded="true" />
+            <element signature="e#219#220#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/step/Measurements/Inches.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+          <folding>
+            <element signature="e#127#128#0" expanded="true" />
+            <element signature="e#170#171#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#274#275#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/step/Measurements/Measurement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/math/RoundingMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="243" column="31" selection-start-line="243" selection-start-column="31" selection-end-line="243" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/math/BigDecimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="2637" column="48" selection-start-line="2637" selection-start-column="48" selection-end-line="2637" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/step/Measurements/QuantityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1276">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/step/Measurements/Quantity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="e#340#341#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/step/Measurements/Unit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+          <folding>
+            <element signature="e#163#164#0" expanded="true" />
+            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>java_workspace</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
