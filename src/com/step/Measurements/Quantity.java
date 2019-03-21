@@ -1,6 +1,7 @@
 package com.step.Measurements;
 
 import java.math.BigDecimal;
+import java.security.InvalidParameterException;
 
 class Quantity {
     private Unit unit;
@@ -20,6 +21,17 @@ class Quantity {
         if (this == otherQuantity) return true;
         if (otherQuantity == null || getClass() != otherQuantity.getClass()) return false;
         Quantity quantity = (Quantity) otherQuantity;
-        return this.calculateBaseValue().equals(quantity.calculateBaseValue());
+        if (this.unit.isSameType(quantity.unit)) {
+            return this.calculateBaseValue().equals(quantity.calculateBaseValue());
+        }
+        return false;
+    }
+
+    Quantity addAnotherQuantity(Quantity otherQuantity) {
+        if (!this.unit.isSameType(otherQuantity.unit)) {
+            throw new InvalidParameterException("invalid parameters");
+        }
+        BigDecimal sumOfQuantities = this.value.add(otherQuantity.value);
+        return new Quantity(sumOfQuantities, this.unit);
     }
 }
