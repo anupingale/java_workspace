@@ -16,22 +16,26 @@ class Quantity {
         return this.unit.convertToBase(this.value);
     }
 
+    private boolean hasSameClass(Quantity quantity) {
+        return quantity.unit.getClass() == this.unit.getClass();
+    }
+
+    private boolean hasSameBaseValue(Quantity quantity) {
+        return this.calculateBaseValue().intValue() == quantity.calculateBaseValue().intValue();
+    }
+
     @Override
     public boolean equals(Object otherQuantity) {
         if (this == otherQuantity) return true;
         if (otherQuantity == null || getClass() != otherQuantity.getClass()) return false;
         Quantity quantity = (Quantity) otherQuantity;
-        if (this.unit.isSameType(quantity.unit)) {
-            return this.calculateBaseValue().equals(quantity.calculateBaseValue());
-        }
-        return false;
+        return hasSameClass(quantity) && hasSameBaseValue(quantity);
     }
 
-    Quantity addAnotherQuantity(Quantity otherQuantity) {
-        if (!this.unit.isSameType(otherQuantity.unit)) {
-            throw new InvalidParameterException("invalid parameters");
-        }
-        BigDecimal sumOfQuantities = this.value.add(otherQuantity.value);
-        return new Quantity(sumOfQuantities, this.unit);
+    Quantity add(Quantity otherQuantity) throws NoSuchMethodException {
+        if (!hasSameClass(otherQuantity)) throw new InvalidParameterException();
+        BigDecimal sumOfQuantities = this.calculateBaseValue().add(otherQuantity.calculateBaseValue());
+        BigDecimal quantitiesSumInInches = this.unit.convertToStandard(sumOfQuantities);
+        return new Quantity(quantitiesSumInInches, this.unit.getStandardUnit());
     }
 }
