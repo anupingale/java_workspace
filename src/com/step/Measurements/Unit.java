@@ -6,7 +6,7 @@ abstract class Unit {
 
     private final BigDecimal baseValue;
 
-    public Unit(BigDecimal baseValue) {
+    Unit(BigDecimal baseValue) {
         this.baseValue = baseValue;
     }
 

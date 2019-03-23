@@ -100,7 +100,8 @@ class QuantityTest {
     }
 
     @Test
-    void shouldAddTwoInchAndTwoPointFiveInch() throws NoSuchMethodException {
+    @DisplayName("should add two inch quantities and return new inch quantity")
+    void shouldAddTwoInches() throws NoSuchMethodException {
         Quantity twoInch = new Quantity(new BigDecimal("2.0"), LengthUnits.INCH);
         Quantity twoPointFiveFiveCM = new Quantity(new BigDecimal("2.5"), LengthUnits.CM);
         Quantity expected = new Quantity(new BigDecimal("3.0"), LengthUnits.INCH);
@@ -108,7 +109,8 @@ class QuantityTest {
     }
 
     @Test
-    void shouldAddOneGallonAndOneLiter() throws NoSuchMethodException {
+    @DisplayName("should return true if the two volume quantities are equal")
+    void shouldAddGallonAndLiter() throws NoSuchMethodException {
         Quantity oneGallon = new Quantity(new BigDecimal(1), VolumeUnits.GALLON);
         Quantity oneLiter = new Quantity(new BigDecimal(1), VolumeUnits.LITER);
         Quantity expected = new Quantity(new BigDecimal("4.78"), VolumeUnits.GALLON);
@@ -116,6 +118,7 @@ class QuantityTest {
     }
 
     @Test
+    @DisplayName("should return true when compare temperature units are equal")
     void shouldCompareTemperatureInCelsiusToFahrenheit() {
         Quantity fahrenheit = new Quantity(new BigDecimal(212), TemperatureUnits.FAHRENHEIT);
         Quantity celsius = new Quantity(new BigDecimal(100), TemperatureUnits.CELSIUS);

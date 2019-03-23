@@ -16,5 +16,4 @@ public class LengthUnits extends Unit {
     public LengthUnits getStandardUnit() {
         return LengthUnits.INCH;
     }
-
 }
