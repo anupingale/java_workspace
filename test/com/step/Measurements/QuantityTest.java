@@ -126,6 +126,7 @@ class QuantityTest {
     }
 
     @Test
+    @DisplayName("should not add two temperatures.")
     void shouldNotAddTwoTemperatures() {
         Quantity fahrenheit = new Quantity(new BigDecimal(212), TemperatureUnits.CELSIUS);
         Quantity celsius = new Quantity(new BigDecimal(100), TemperatureUnits.CELSIUS);
