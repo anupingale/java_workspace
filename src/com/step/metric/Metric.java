@@ -59,14 +59,15 @@ public class Metric {
     }
 
     public Metric multiply(Metric otherMetric) {
-        int c[][]=new int[3][3];
-        for(int i=0;i<3;i++) {
-            for (int j = 0; j < 3; j++) {
-                c[i][j] = 0;
-                for (int k = 0; k < 3; k++) {
-                    c[i][j] += metric[i][k] * otherMetric.metric[k][j];
+        int result[][] = new int[row][column];
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < column; j++) {
+                result[i][j] = 0;
+                for (int k = 0; k < column; k++) {
+                    result[i][j] += metric[i][k] * otherMetric.metric[k][j];
                 }
-                System.out.print(c[i][j] + " ");
             }
         }
+        return  new Metric(row,column,result);
+    }
 }
