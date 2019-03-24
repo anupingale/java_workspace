@@ -43,19 +43,8 @@ public class Metric {
                     return false;
                 }
             }
-
         }
         return true;
-    }
-
-    public Metric subtract(Metric otherMetric) {
-        if (hasDifferentLength(otherMetric)) throw new InvalidParameterException();
-
-        int[][] result = new int[this.row][this.column];
-        for (int i = 0; i < row; i++)
-            for (int i1 = 0; i1 < column; i1++)
-                result[i][i1] = metric[i][i1] - otherMetric.metric[i][i1];
-        return new Metric(row, column, result);
     }
 
     public Metric multiply(Metric otherMetric) {
@@ -68,6 +57,26 @@ public class Metric {
                 }
             }
         }
-        return  new Metric(row,column,result);
+        return new Metric(row, column, result);
+    }
+
+    public Metric subtract(Metric otherMetric) {
+        if (hasDifferentLength(otherMetric)) throw new InvalidParameterException();
+
+        int[][] result = new int[this.row][this.column];
+        for (int i = 0; i < row; i++)
+            for (int i1 = 0; i1 < column; i1++)
+                result[i][i1] = metric[i][i1] - otherMetric.metric[i][i1];
+        return new Metric(row, column, result);
+    }
+
+    public Metric transpose() {
+        int transpose[][] = new int[this.row][this.column];
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < column; j++) {
+                transpose[j][i] = metric[i][j];
+            }
+        }
+        return new Metric(row, column, transpose);
     }
 }

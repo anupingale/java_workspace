@@ -27,11 +27,22 @@ class MetricTest {
 
     @Test
     void shouldMultiplyTwoMetric() {
-        int[][] numbers = {{1, 2}, {3, 4}};
-        int[][] expectedMetric = {{0, 0}, {0, 0}};
+        int[][] numbers = {{1, 1}, {1, 1}};
+        int[][] expectedMetric = {{2, 2}, {2, 2}};
 
         Metric metric = new Metric(2, 2, numbers);
         Metric expected = new Metric(2, 2, expectedMetric);
         assertEquals(expected, metric.multiply(metric));
+    }
+
+
+    @Test
+    void shouldReturnTranspose() {
+        int[][] numbers = {{1, 2}, {3, 4}};
+        int[][] expectedMetric = {{1, 3}, {2, 4}};
+
+        Metric metric = new Metric(2, 2, numbers);
+        Metric expected = new Metric(2, 2, expectedMetric);
+        assertEquals(expected, metric.transpose());
     }
 }
