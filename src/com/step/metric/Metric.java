@@ -60,26 +60,13 @@ public class Metric {
 
     public Metric multiply(Metric otherMetric) {
         int c[][]=new int[3][3];
-        for(int i=0;i<3;i++){
-            for(int j=0;j<3;j++){
-                c[i][j]=0;
-                for(int k=0;k<3;k++)
-                {
-                    c[i][j]+=metric[i][k]*otherMetric.metric[k][j];
+        for(int i=0;i<3;i++) {
+            for (int j = 0; j < 3; j++) {
+                c[i][j] = 0;
+                for (int k = 0; k < 3; k++) {
+                    c[i][j] += metric[i][k] * otherMetric.metric[k][j];
                 }
-                System.out.print(c[i][j]+" ");
+                System.out.print(c[i][j] + " ");
             }
-            System.out.println();//new line
         }
-
-
-
-
-
-        int[][] result = new int[this.row][this.column];
-        for (int i = 0; i < row; i++)
-            for (int i1 = 0; i1 < column; i1++)
-                result[i][i1] = metric[i][i1] - otherMetric.metric[i][i1];
-        return new Metric(row, column, result);
-    }
 }
