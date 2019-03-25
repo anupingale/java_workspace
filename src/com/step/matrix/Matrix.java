@@ -31,8 +31,8 @@ class Matrix {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Matrix matrix1 = (Matrix) o;
-        return this.isEqual(matrix1);
+        Matrix metric1 = (Matrix) o;
+        return this.isEqual(metric1);
     }
 
     private boolean isEqual(Matrix otherMatrix) {
