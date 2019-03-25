@@ -1,6 +1,7 @@
 package com.step.matrix;
 
 import java.security.InvalidParameterException;
+import java.util.Arrays;
 
 class Matrix {
     private final int row;
@@ -31,17 +32,11 @@ class Matrix {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Matrix metric1 = (Matrix) o;
-        return this.isEqual(metric1);
+        Matrix matrix1 = (Matrix) o;
+        return Arrays.deepEquals(matrix,matrix1.matrix);
     }
 
-    private boolean isEqual(Matrix otherMatrix) {
-        if (hasDifferentLength(otherMatrix)) return false;
-        for (int i = 0; i < row; i++)
-            for (int i1 = 0; i1 < column; i1++)
-                if (!(matrix[i][i1] == otherMatrix.matrix[i][i1])) return false;
-        return true;
-    }
+
 
     Matrix multiply(Matrix otherMatrix) {
         int[][] result = new int[row][column];

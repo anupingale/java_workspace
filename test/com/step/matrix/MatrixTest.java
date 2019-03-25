@@ -35,7 +35,6 @@ class MatrixTest {
         assertEquals(expected, metric.multiply(metric));
     }
 
-
     @Test
     void shouldReturnTranspose() {
         int[][] numbers = {{1, 2}, {3, 4}};
