@@ -20,5 +20,10 @@ abstract class Observable {
         }
     }
 
+    void updateDisplay(ParkingLotDetails details){
+        for (Observer observer : observers) {
+            observer.updateDisplay(details);
+        }
+    }
 }
 

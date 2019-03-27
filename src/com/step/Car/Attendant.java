@@ -4,24 +4,35 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Attendant implements Observer {
-    List<ParkingLot> parkingLots;
+    private List<ParkingLot> parkingLots;
+    private Assistant assistant;
 
-    Attendant() {
+
+    Attendant(Assistant assistant) {
         this.parkingLots = new ArrayList<>();
+        this.assistant = assistant;
     }
 
-    void addParkingLot(ParkingLot parkingLot) {
+    Attendant addParkingLot(ParkingLot parkingLot) {
         this.parkingLots.add(parkingLot);
+        this.updateDisplay(parkingLot.getDetails());
         parkingLot.addObserver(this);
+        return this;
     }
 
     int getParkingLotCount() {
         return this.parkingLots.size();
     }
 
+
     @Override
-    public String notify(String notification) {
+    public void notify(String notification) {
         System.out.println(notification);
-        return notification;
     }
+
+    @Override
+    public void updateDisplay(ParkingLotDetails details) {
+        this.assistant.updateDisplay(details);
+    }
+
 }

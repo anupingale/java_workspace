@@ -7,21 +7,23 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class ParkingLotTest {
 
-
     class MockedAttendant extends Attendant {
-        protected boolean isCalled = false;
+        boolean isCalled = false;
+
+        MockedAttendant(Assistant assistant) {
+            super(assistant);
+        }
 
         @Override
-        public String notify(String notification) {
+        public void notify(String notification) {
             isCalled = true;
-            return notification;
         }
     }
 
     @Test
     void shouldParkACar() {
         ParkingLot parkingLot1 = new ParkingLot(5);
-        Car car = new Car("BMW");
+        Car car = new Car("BMW", 1);
         parkingLot1.park(car);
         assertEquals(1, parkingLot1.getCarCount());
     }
@@ -29,7 +31,7 @@ class ParkingLotTest {
     @Test
     void shouldNotParkACar() {
         ParkingLot parkingLot = new ParkingLot(1);
-        Car car = new Car("BMW");
+        Car car = new Car("BMW", 1);
         parkingLot.park(car);
         assertEquals(1, parkingLot.getCarCount());
         parkingLot.park(car);
@@ -39,20 +41,20 @@ class ParkingLotTest {
     @Test
     void shouldUnParkACar() {
         ParkingLot parkingLot = new ParkingLot(2);
-        Car bmw = new Car("BMW");
-        parkingLot.park(bmw);
-        Car lamborghini = new Car("Lamborghini");
+        Car bmw = new Car("BMW", 1);
+        int BMWId = parkingLot.park(bmw);
+        Car lamborghini = new Car("Lamborghini", 2);
         parkingLot.park(lamborghini);
-        parkingLot.unPark(bmw);
+        parkingLot.unPark(BMWId);
         assertEquals(1, parkingLot.getCarCount());
     }
 
     @Test
     void shouldNotifyAttendantIfParkingLotIsFull() {
         ParkingLot parkingLot = new ParkingLot(1);
-        Car bmw = new Car("BMW");
-        Car lamborghini = new Car("Lamborghini");
-        MockedAttendant attendant = new MockedAttendant();
+        Car bmw = new Car("BMW", 1);
+        Car lamborghini = new Car("Lamborghini", 1);
+        MockedAttendant attendant = new MockedAttendant(new Assistant(new Display()));
 
         parkingLot.addObserver(attendant);
         parkingLot.park(bmw);
@@ -63,12 +65,12 @@ class ParkingLotTest {
     @Test
     void shouldNotifyAttendantIfParkingLotBecomeAvailable() {
         ParkingLot parkingLot = new ParkingLot(1);
-        Car bmw = new Car("BMW");
-        MockedAttendant attendant = new MockedAttendant();
+        Car bmw = new Car("BMW", 1);
 
+        MockedAttendant attendant = new MockedAttendant(new Assistant(new Display()));
         parkingLot.addObserver(attendant);
-        parkingLot.park(bmw);
-        parkingLot.unPark(bmw);
+        int BMWId = parkingLot.park(bmw);
+        parkingLot.unPark(BMWId);
         assertTrue(attendant.isCalled);
     }
 }

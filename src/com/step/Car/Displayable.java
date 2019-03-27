@@ -1,6 +1,5 @@
 package com.step.Car;
 
-interface Observer {
-    void notify(String notification);
+interface Displayable {
     void updateDisplay(ParkingLotDetails details);
 }
